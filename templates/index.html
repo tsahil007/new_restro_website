@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <title>Jordan's Restaurant</title>
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+  <!-- OWN CSS -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/responsive-style.css">
+</head>
+
+<body>
+<! -- IBM WATSON SCRIPT -->
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "7c9b050b-1632-44ba-a8c2-67dede4ca936", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "e5e33a11-2265-40e0-8b32-dfd1846669d7", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+  <!-- header design -->
+  <header>
+    <nav class="navbar navbar-expand-lg navigation-wrap">
+      <div class="container">
+         <a class="navbar-brand" href="#"><h2>Jordan's Restaurant</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Menu">Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- section-1 top-banner -->
+  <section id="home">
+    <div class="container-fluid px-0 top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <h1>Good food choices are good investments.</h1>
+            <p>Cooking is all about people. Food is maybe the only universal thing that really has the power to bring everyone together. No matter what culture, everywhere around the world, people eat together.</p>
+            <div class="mt-4">
+           <button class="main-btn mt-3"> Order Now </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-2 counter -->
+  <section id="counter">
+    <section class="counter-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count1"></span>+
+            </h2>
+            <p>Tables served</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count2"></span>+
+            </h2>
+            <p>Happy clients</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count3"></span>+
+            </h2>
+            <p>Cities</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count4"></span>+
+            </h2>
+            <p>Branch</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- section-3 about-->
+   <section id="about">
+     <div class="about-section wrapper">
+       <div class="container">
+         <div class="row align-items-center">
+           <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+             <div class="card border-0">
+               <img src="static/images/img/img-1.jpg" class="img-fluid">
+             </div>
+           </div>
+           <div class="col-lg-5 col-md-12 text-sec">
+            <h2>We pride ourselves on making real food from the best ingredients.</h2>
+            <p>Our elevated rooftop has gone to the birds.Introducing Rare Bird, Denver's newest rooftop bar atop Haleyon
+              in Cherry Creek.We'll be featuring the same amazing Denver Views, new Specialty drinks, craft beers, wine and
+              a revamped light fare menu.</p>
+              <button class="main-btn mt-4">Learn More</button>
+           </div>
+         </div>
+       </div>
+       <div class="container food-type">
+         <div class="row align-items-center">
+           <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+            <h2>We make everything by hand with the best possible ingredients.</h2>
+            <p>Vegan food is soul food in its truest form. Soul food means to feed the soul. And to me, your soul is your intent. If your intent is pure, you are pure.</p>
+           </div>
+           <div class="col-lg-7 col-md-12">
+             <div class="card border-0">
+               <img src="static/images/img/img-2.jpg" class="img-fluid">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- section-3 story-->
+   <section id="story">
+     <div class="story-section">
+       <div class="container">
+         <div class="row">
+           <div class="col-sm-12">
+             <div class="text-content">
+              <h2>When a man's stomach is full it makes no
+                difference whether he is rich or poor.</h2>
+              <p>Cooking is like love. It should be entered into with abandon or not at all.</p>
+                <button class="main-btn mt-3">Read More</button>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- section-4 Menu-->
+   <section id="Menu">
+     <div class="Menu wrapper">
+       <div class="container">
+         <div class="row">
+           <div class="col-sm-12">
+             <div class="text-content text-center">
+              <h2>Menu</h2>
+              <p>If you expect your life to be always smooth without any ups and downs, just imagine your biryani as plain white rice.
+                Because all the ups and downs are like spices that make the biryani worth drooling.</p>
+             </div>
+           </div>
+         </div>
+         <div class="row pt-5">
+           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+             <div class="card">
+               <img src="static/images/img/img-3.jpg" class="img-fluid">
+               <div class="pt-3">
+                <h4>Paneer Paratha</h4>
+                <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                <span>₹40<del>₹50</del></span>
+                <button class="mt-4 main-btn">Order Now</button>
+              </div>
+             </div>
+           </div>
+           <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+              <img src="static/images/img/img-4.jpg" class="img-fluid">
+              <div class="pt-3">
+                <h4>Fried rice</h4>
+                <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                <span>₹120<del>₹140</del></span>
+                <button class="mt-4 main-btn">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+              <img src="static/images/img/img-5.jpg" class="img-fluid">
+              <div class="pt-3">
+                <h4>Lemon Chicken </h4>
+                <p>Time: 45 - 65 Minutes | Serves: 1</p>
+                <span>₹450<del>₹600</del></span>
+                <button class="mt-4 main-btn">Order Now</button>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- section-7 book-food-->
+   <section id="book-food">
+     <div class="book-food">
+       <div class="container book-food-text">
+         <div class="row text-center">
+           <div class="col-lg-9 col-md-19">
+            <h2>Baked fresh daily by bakers with passion.</h2>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- section-9 footer-->
+  <footer id="footer">
+    <div class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a class="footer-link" href="#">Register</a>
+            <a class="footer-link" href="#">Forum</a>
+            <a class="footer-link" href="#">Affiliate</a>
+            <a class="footer-link" href="#faq">FAQ</a>
+          </div>
+          <div class="col-sm-12">
+            <div class="footer-copy">
+              <div class="copy-right text-center pt-5">
+                <p class="text-light">© 2021. Jordan's restaurant. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <!-- own js -->
+  <script src="static/js/main.js"></script>
+</body>
+</html>
